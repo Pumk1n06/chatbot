@@ -18,7 +18,7 @@ const LoginPage = () => {
       if (result.token) {
         // If login successful, store the token in localStorage and navigate
         localStorage.setItem('authToken', result.token);
-        navigate('/organisation-setup');  // Navigate to organization setup
+        navigate('/setup-organisation');  // Navigate to organization setup
       } else {
         // Show error message if login fails
         setError(result.message || 'Login failed');

@@ -32,7 +32,7 @@ export const loginUser = async (userData) => {
 
 // Frontend call to setup organization
 export const setupOrganisation = async (orgData, token) => {
-  const response = await fetch(`${API_URL}/user/organisation-setup`, {
+  const response = await fetch(`${API_URL}/user/setup-organisation`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
