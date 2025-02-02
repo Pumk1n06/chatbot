@@ -1,6 +1,6 @@
 // src/api.js
 
-const API_URL = 'http://localhost:5000/api';  // Your backend API URL
+const API_URL = 'https://chatbot-pkeo.onrender.com/api';  // Your backend API URL
 
 export const registerUser = async (userData) => {
   try {
