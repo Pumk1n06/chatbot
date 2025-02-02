@@ -1,0 +1,200 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  width: 100%; /* Full width on mobile */
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus:before {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+
+input, .input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #2196F3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+  transition: all 0.3s ease;
+}
+
+.registration-container {
+  padding: 30px;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Input Field Focus Animation */
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-field input {
+  margin-bottom: 15px;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .registration-container {
+    padding: 20px;
+    width: 90%; /* Ensure full width on mobile */
+  }
+
+  button {
+    width: 100%; /* Full width on mobile */
+  }
+
+  input {
+    padding: 14px; /* Increase input padding for easier touch interaction */
+    font-size: 18px; /* Larger text for smaller screens */
+  }
+
+  .email-verification {
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 600px) {
+  .registration-container {
+    width: 500px; /* Maintain a maximum width on larger screens */
+  }
+
+  button {
+    width: auto; /* Default button width for desktop */
+  }
+
+  .input-field input {
+    font-size: 16px; /* Standard font size on desktop */
+  }
+}
+
+button {
+  transition: all 0.3s ease;
+  width: 100%; /* Full width on mobile */
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+/* Updated Styles for Chatbot Integration & Success Pages */
+.registration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+button {
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #303f9f;
+}
+
+button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+/* Success page styles */
+.success-alert {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error-alert {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Adjust Button Styles for the Success Page */
+.material-button {
+  margin-top: 20px;
+}
+
+.material-button:hover {
+  background-color: #303f9f;
+  color: white;
+}
